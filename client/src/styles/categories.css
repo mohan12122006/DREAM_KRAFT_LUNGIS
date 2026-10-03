@@ -1,0 +1,620 @@
+/* =====================================================
+   DREAM KRAFT LUNGIS
+   CATEGORIES PAGE
+===================================================== */
+
+.categories-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #f7f2e9;
+
+  color: #211a15;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.categories-hero {
+  position: relative;
+
+  min-height: 450px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-image:
+    url('/images/categories/category-hero.jpg');
+
+  background-size: cover;
+  background-position: center;
+}
+
+.categories-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 10, 8, 0.88) 0%,
+      rgba(8, 10, 8, 0.68) 35%,
+      rgba(8, 10, 8, 0.28) 62%,
+      rgba(8, 10, 8, 0.05) 100%
+    );
+}
+
+.categories-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(650px, 90%);
+
+  margin-left: 8%;
+
+  color: #fff;
+}
+
+/* Brand */
+
+.categories-eyebrow {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: #e2bd70;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+/* Small heading */
+
+.hero-small-text {
+  margin-bottom: 14px;
+
+  color: #f4eadb;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+/* Main heading */
+
+.categories-hero h1 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+
+  font-size: clamp(25px, 6vw, 40px);
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: -2px;
+
+  text-shadow:
+    0 3px 15px rgba(0, 0, 0, 0.35);
+}
+
+.categories-hero h1 span {
+  display: block;
+
+  color: #e2bd70;
+
+  font-style: italic;
+}
+
+/* Hero description */
+
+.categories-hero p {
+  max-width: 530px;
+
+  margin: 27px 0;
+
+  color: #f5eee5;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+/* Hero button */
+
+.categories-hero-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 15px 27px;
+
+  background: #94143c;
+
+  color: #fff;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.15);
+
+  border-radius: 4px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+.categories-hero-btn:hover {
+  background: #b21949;
+
+  transform: translateY(-3px);
+}
+
+/* =====================================================
+   COLLECTION SECTION
+===================================================== */
+
+.categories-section {
+  width: min(1400px, 92%);
+
+  margin: auto;
+
+  padding: 85px 0;
+}
+
+.categories-heading {
+  text-align: center;
+
+  margin-bottom: 48px;
+}
+
+.categories-heading > span {
+  display: inline-block;
+
+  color: #8d1638;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.categories-heading h2 {
+  margin: 12px 0 10px;
+
+  font-size: clamp(32px, 5vw, 48px);
+
+  line-height: 1.1;
+
+  color: #17120e;
+}
+
+.categories-heading p {
+  max-width: 650px;
+
+  margin: auto;
+
+  color: #70675e;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+/* =====================================================
+   CATEGORY GRID
+===================================================== */
+
+.categories-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+/* =====================================================
+   CATEGORY CARD
+===================================================== */
+
+.category-card {
+  overflow: hidden;
+
+  background: #fff;
+
+  border: 1px solid #e7ddd0;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 8px 25px
+    rgba(50, 35, 20, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 18px 40px
+    rgba(50, 35, 20, 0.15);
+}
+
+/* =====================================================
+   CATEGORY IMAGE
+===================================================== */
+
+.category-image {
+  position: relative;
+
+  height: 270px;
+
+  overflow: hidden;
+
+  background: #ddd;
+}
+
+.category-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.6s ease;
+}
+
+.category-card:hover
+.category-image img {
+  transform: scale(1.07);
+}
+
+.category-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55),
+      transparent 55%
+    );
+}
+
+/* Number */
+
+.category-number {
+  position: absolute;
+
+  top: 15px;
+
+  right: 15px;
+
+  padding: 6px 10px;
+
+  border-radius: 4px;
+
+  background:
+    rgba(0, 0, 0, 0.65);
+
+  color: #fff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+/* Icon */
+
+.category-icon {
+  position: absolute;
+
+  left: 15px;
+
+  bottom: 15px;
+
+  width: 43px;
+
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #94163b;
+
+  color: #fff;
+
+  border: 2px solid
+    rgba(255, 255, 255, 0.8);
+}
+
+/* =====================================================
+   CARD CONTENT
+===================================================== */
+
+.category-content {
+  padding: 22px;
+}
+
+.category-content h3 {
+  margin: 0 0 10px;
+
+  font-size: 21px;
+
+  color: #211914;
+}
+
+.category-content p {
+  min-height: 65px;
+
+  margin: 0 0 18px;
+
+  color: #756c63;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+/* Link */
+
+.category-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #8d1638;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  transition:
+    gap 0.25s ease;
+}
+
+.category-link:hover {
+  gap: 12px;
+}
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.categories-cta {
+  position: relative;
+
+  padding: 85px 20px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      rgba(65, 11, 27, 0.94),
+      rgba(65, 11, 27, 0.94)
+    );
+}
+
+.categories-cta-content {
+  max-width: 800px;
+
+  margin: auto;
+}
+
+.categories-cta span {
+  color: #e1b968;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.categories-cta h2 {
+  margin: 15px 0;
+
+  color: #fff;
+
+  font-size: clamp(30px, 5vw, 50px);
+}
+
+.categories-cta p {
+  margin-bottom: 28px;
+
+  color: #e7ddd5;
+
+  font-size: 16px;
+}
+
+.categories-cta-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 14px 30px;
+
+  border-radius: 5px;
+
+  background: #dfb866;
+
+  color: #211914;
+
+  text-decoration: none;
+
+  font-weight: 800;
+
+  transition:
+    all 0.3s ease;
+}
+
+.categories-cta-btn:hover {
+  background: #f0cd83;
+
+  transform: translateY(-3px);
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .categories-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .categories-hero {
+    min-height: 560px;
+  }
+
+  .categories-hero-content {
+    margin-left: 6%;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .categories-hero {
+    min-height: 560px;
+
+    background-position:
+      65% center;
+  }
+
+  .categories-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 10, 8, 0.88),
+        rgba(8, 10, 8, 0.55)
+      );
+  }
+
+  .categories-hero-content {
+    width: 90%;
+
+    margin-left: 5%;
+  }
+
+  .categories-eyebrow {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+  }
+
+  .hero-small-text {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .categories-hero h1 {
+    font-size: 45px;
+
+    letter-spacing: -1px;
+  }
+
+  .categories-hero p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .categories-section {
+    width: 92%;
+
+    padding: 60px 0;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .category-image {
+    height: 280px;
+  }
+
+  .category-content p {
+    min-height: auto;
+  }
+
+  .categories-cta {
+    padding: 65px 20px;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .categories-hero {
+    min-height: 480px;
+  }
+
+  .categories-hero h1 {
+    font-size: 40px;
+  }
+
+  .categories-hero p {
+    font-size: 14px;
+  }
+
+  .category-image {
+    height: 250px;
+  }
+}

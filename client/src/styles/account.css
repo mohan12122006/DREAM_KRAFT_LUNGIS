@@ -1,0 +1,535 @@
+/* =========================================================
+   DREAM KRAFT LUNGIS
+   E-COMMERCE ACCOUNT PAGE
+========================================================= */
+
+.account-page {
+  min-height: calc(100vh - 80px);
+  padding: 45px 20px 70px;
+ background: rgba(255, 249, 237, 0.94);
+}
+
+/* =========================================================
+   WRAPPER
+========================================================= */
+
+.account-wrapper {
+  width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.account-header {
+  margin-bottom: 18px;
+}
+
+.account-user {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 20px 22px;
+  border: 1px solid #e4d9c8;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow:
+    0 4px 15px rgba(55, 35, 20, 0.06);
+}
+
+.account-avatar {
+  width: 62px;
+  height: 62px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #75162f,
+      #4e0e21
+    );
+
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  box-shadow:
+    0 5px 15px rgba(75, 15, 35, 0.2);
+}
+
+.account-brand {
+  margin: 0 0 4px;
+
+  color: #9a742e;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.account-user h1 {
+  margin: 0;
+
+  color: #3d2b20;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.account-email {
+  margin: 4px 0 0;
+
+  color: #81766c;
+
+  font-size: 13px;
+}
+
+/* =========================================================
+   ACCOUNT MENU
+========================================================= */
+
+.account-menu {
+  overflow: hidden;
+
+  border: 1px solid #ded3c4;
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 30px rgba(50, 32, 20, 0.08);
+}
+
+.account-menu h2 {
+  margin: 0;
+
+  padding: 22px 28px 17px;
+
+  color: #30251e;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  border-bottom: 1px solid #eee7dc;
+}
+
+/* =========================================================
+   MENU ITEM
+========================================================= */
+
+.account-menu-item,
+.account-logout {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  min-height: 73px;
+
+  padding: 12px 27px;
+
+  border: 0;
+  border-bottom: 1px solid #eee8df;
+
+  background: #ffffff;
+
+  color: #30251e;
+
+  text-decoration: none;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    padding 0.2s ease;
+}
+
+.account-menu-item:hover,
+.account-logout:hover {
+  background: #fcf8f0;
+  padding-left: 31px;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.account-menu-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #faf5eb;
+
+  color: #5b4737;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.account-menu-item:hover .account-menu-icon {
+  background: #f5e8cf;
+  color: #75162f;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.account-menu-content {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.account-menu-content strong {
+  color: #3b3028;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.account-menu-content span {
+  color: #91867c;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.account-arrow {
+  flex-shrink: 0;
+
+  color: #aaa097;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.account-menu-item:hover .account-arrow {
+  color: #75162f;
+  transform: translateX(3px);
+}
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+.account-logout {
+  border-bottom: 0;
+}
+
+.account-logout .account-menu-icon {
+  background: #fff1f1;
+  color: #a42a2a;
+}
+
+.account-logout:hover {
+  background: #fff8f8;
+}
+
+.account-logout:hover .account-menu-icon {
+  background: #fce1e1;
+  color: #a42a2a;
+}
+
+.account-logout .account-menu-content strong {
+  color: #9d2929;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.account-footer {
+  padding: 25px 10px;
+
+  text-align: center;
+}
+
+.account-footer p {
+  margin: 0 0 5px;
+
+  color: #75162f;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.account-footer span {
+  color: #9a8d80;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   LOGIN REQUIRED
+========================================================= */
+
+.account-login-card {
+  width: min(480px, 100%);
+
+  margin: 60px auto;
+  padding: 42px 30px;
+
+  text-align: center;
+
+  border: 1px solid #e3d8c7;
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 35px rgba(50, 32, 20, 0.08);
+}
+
+.account-login-icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #f8eddb;
+
+  color: #75162f;
+}
+
+.account-login-card h1 {
+  margin: 0 0 12px;
+
+  color: #3d2b20;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 25px;
+}
+
+.account-login-card > p {
+  margin: 0 auto 23px;
+
+  max-width: 380px;
+
+  color: #7c7167;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.account-login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 150px;
+  min-height: 44px;
+
+  padding: 0 25px;
+
+  border-radius: 7px;
+
+  background: #75162f;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.account-login-button:hover {
+  background: #4e0e21;
+  transform: translateY(-1px);
+}
+
+.account-register-text {
+  margin-top: 18px !important;
+  margin-bottom: 0 !important;
+
+  color: #81766c !important;
+}
+
+.account-register-text a {
+  color: #75162f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .account-page {
+    padding: 30px 15px 55px;
+  }
+
+  .account-wrapper {
+    width: min(650px, 100%);
+  }
+
+  .account-user {
+    padding: 18px;
+  }
+
+  .account-menu h2 {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .account-menu-item,
+  .account-logout {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .account-menu-item:hover,
+  .account-logout:hover {
+    padding-left: 24px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .account-page {
+    min-height: 100vh;
+    padding: 18px 10px 40px;
+  }
+
+  .account-user {
+    gap: 13px;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .account-avatar {
+    width: 52px;
+    height: 52px;
+
+    font-size: 21px;
+  }
+
+  .account-user h1 {
+    font-size: 19px;
+  }
+
+  .account-brand {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .account-email {
+    font-size: 11px;
+  }
+
+  .account-menu {
+    border-radius: 12px;
+  }
+
+  .account-menu h2 {
+    padding: 18px 18px 14px;
+    font-size: 17px;
+  }
+
+  .account-menu-item,
+  .account-logout {
+    min-height: 67px;
+
+    gap: 12px;
+
+    padding: 10px 17px;
+  }
+
+  .account-menu-item:hover,
+  .account-logout:hover {
+    padding-left: 20px;
+  }
+
+  .account-menu-icon {
+    width: 37px;
+    height: 37px;
+  }
+
+  .account-menu-content strong {
+    font-size: 14px;
+  }
+
+  .account-menu-content span {
+    font-size: 10.5px;
+  }
+
+  .account-arrow {
+    width: 17px;
+  }
+
+  .account-footer {
+    padding: 20px 5px;
+  }
+}

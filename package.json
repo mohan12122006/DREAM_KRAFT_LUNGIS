@@ -1,0 +1,16 @@
+{
+  "name": "dream-kraft-lungis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium full-stack e-commerce site for DREAM KRAFT LUNGIS.",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "client:dev": "npm --prefix client run dev",
+    "server:dev": "npm --prefix server run dev",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

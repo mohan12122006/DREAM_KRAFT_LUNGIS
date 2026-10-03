@@ -1,0 +1,1 @@
+This folder is reserved for SQL-backed repositories. The current demo uses seeded in-memory models from `server/data.js` so the storefront runs immediately, while `database/schema.sql` and `database/seed.sql` provide the production PostgreSQL structure.
